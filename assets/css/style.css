@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.small-text{
+    font-size: small;
+    color: gray;
+}
+.large-text{
+    font-size: xx-large;
+    color: black;
+}
+#main-div {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+#left-panel {
+    background-color: black;
+    height: 776px;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+#right-panel {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+#right-panel::-webkit-scrollbar{
+    display: none;
+}
+#name-box-sub{
+    display: flex;
+    margin-left: 23%;
+}
+#san-logo-sub {
+    height: 80px;
+    width: auto;
+    margin-top: 52px;
+    margin-right: 12px;
+    transition: 0.8s;
+}
+#san-logo-sub:hover{
+    height: 95px;
+}
+#menu-tabs{
+    margin-top: 150px;
+}
+#menu-tabs > a > p {
+    font-size: large;
+    margin: 20px;
+    color: rgb(153, 153, 153);
+}
+#menu-tabs > a  :hover{
+    font-size: large;
+    margin: 20px;
+    color: white;
+}
+#contact-tab {
+    margin-top: 140px;
+    text-align: center;
+}
+#contact-tab > a {
+    margin: 20px;
+}
+#contact-tab > a > img {
+    height: 30px;
+    transition: 0.5s;
+}
+#contact-tab > a > img:hover{
+    height: 50px;
+}
+#left-panel > hr {
+    opacity: 20%;
+
+}
+#menu-tabs > hr {
+    opacity: 20%;
+    display: none;
+}
+
+/* right panel starts here */
+#home-page {
+    background-image: url("./../img/bg-img.png");
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+#home-page:hover {
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+#home-box {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+#san-logo-main {
+    height: 250px;
+    width: auto;
+    margin-bottom: -50px;
+}
+#greet-div{
+    position: absolute;
+    right: 1%;
+    top: 3%;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    opacity: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1;
+    display: none;
+    text-align: center;
+}
+#about-page {
+    background-color: white;
+    height: fit-content;
+    padding: 20px;
+}
+#about-me-div{
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+#san-full-img {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#san-full-img:hover{
+    height: 510px;
+    transform: scale(1.2);
+}
+#san-img-div{
+    margin-left: 50px;
+    background-color: white;
+    overflow: hidden;
+    height: inherit;
+    width: fit-content;
+    border-radius: 10px;
+}
+.tab-head{
+    color: black;
+}
+.tab-det{
+    color: gray;
+}
+#skills-div{
+    background-color: rgb(232, 231, 231);
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+#skills-div-sub{
+    display: grid;
+    grid-template-columns: 60% 30%;
+
+}
+.percent-img{
+    height: 80px;
+}
+#languages{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto;
+    padding: 30px;
+    width: 100%;
+}
+.lang-img {
+    height: 100px;
+    width: auto;
+    margin: 30px;
+}
+#work-page{
+    background-color: rgb(232, 231, 231);
+    
+}
