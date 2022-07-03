@@ -10,6 +10,7 @@
 <body>
     <div id="main-div">
         <div id="left-panel">
+            <a href="#home-page">
             <div id="name-box-sub">
                 <img src="./assets/img/san-circle.png" alt="san-img" id="san-logo-sub">
                 <div>
@@ -17,12 +18,13 @@
                     <p style="margin-top: -80px; margin-left:6px;">SANTHANU</p>
                 </div>
             </div>
+            </a>
             <hr>
             <div id="menu-tabs">
-                <hr id="hr1"><a href="#home-page" onmouseover="hl_home()"><p>HOME</p></a>
-                <hr id="hr2"><a href="#about-page" onmouseover="hl_about()"><p>ABOUT</p></a>
-                <hr id="hr3"><a href="" onmouseover="hl_works()"><p>WORKS</p></a>
-                <hr id="hr4"><a href="" onmouseover="hl_contact()"><p>CONTACT</p></a> <hr id="hr5">
+                <a href="#home-page"><p>HOME</p></a>
+                <a href="#about-page" ><p>ABOUT</p></a>
+                <a href="#work-page" ><p>WORKS</p></a>
+                <a href="#contact-page"><p>CONTACT</p></a>
             </div>
             <div id="contact-tab">
                 <a href="https://www.facebook.com/santhanu.sandy.378/"><img src="./assets/img/facebook.png" alt="fb-logo"></a>
@@ -89,7 +91,8 @@ chose a different path to learn.
                             </tr>
                         </table>
                     </div>
-                    <p class="large-text">KNOWN LANGUAGES</p>
+                    <hr>
+                    <p class="large-text">LANGUAGES KNOWN</p>
                     <div id="languages">
                         <img src="./assets/img/python-logo.png" class="lang-img" alt="">
                         <img src="./assets/img/html-logo.png" class="lang-img" alt="">
@@ -101,13 +104,43 @@ chose a different path to learn.
                         <img src="./assets/img/ror-logo.png" class="lang-img" alt="">
                         <img src="./assets/img/node-logo.png" class="lang-img" alt="">
                     </div>
+
                 </div>
             </div>
             <div id="work-page">
-
+                <p class="small-text">PROJECTS</p>
+                <p class="large-text">MY WORKS</p>
+                <div id="work-div-sub">
+                    <p>TourTube UI</p>
+                    <p>TourTube (Electron)</p>
+                    <p>Todo App (ROR)</p>
+                    <p>Typing (ROR)</p>
+                    <a href="https://tourtubeapp-ui-santhanu.netlify.app/"><img src="./assets/img/tourtube-ui.png" class="my-work-img" alt=""></a>
+                    <img src="./assets/img/tourtube-electron.png" class="my-work-img" alt="">
+                    <a href=""><img src="./assets/img/tourtube-electron.png" class="my-work-img" alt=""></a>
+                    <a href=""><img src="./assets/img/tourtube-electron.png" class="my-work-img" alt=""></a>
+                    <a href="https://github.com/Santhanu236/tourtubeapp-ui">view in Github</a>
+                    <a href="https://github.com/Santhanu236/tourtube-electron">view in Github</a>
+                    <a href="https://github.com/Santhanu236/todo-manager-rails">view in Github</a>
+                    <a href="https://github.com/Santhanu236/typing">view in Github</a>
+                </div>
+            </div>
+            <div id="contact-page">
+                <p class="small-text">GET IN TOUCH</p>
+                <p class="large-text">CONTACT ME</p>
+                <div id="contact-div-sub">
+                    <a href="https://www.facebook.com/santhanu.sandy.378/"><div><img src="./assets/img/facebook.png" alt=""><p class="contact-p">Santhanu</p></div></a>
+                    <a href="https://twitter.com/Santhan65126069"><div><img src="./assets/img/twitter.png" alt=""><p class="contact-p">Santhanu</p></div></a>
+                    <a href="https://www.linkedin.com/in/santhanu-s-409bb4234/"><div><img src="./assets/img/linkedin.png" alt=""><p class="contact-p">Santhanu S</p></div></a>
+                    <a href="mailto:santhanu236@gmail.com"><div><img src="./assets/img/email.png" alt=""><p class="contact-p">santhanu236@gmail.com</p></div></a>
+                    <a href="https://github.com/Santhanu236"><div><img src="./assets/img/github.png" alt=""><p class="contact-p">Santhanu236</p></div></a>
+                    <a onclick="copy_phno()"><div><img src="./assets/img/phone.png" alt=""><p class="contact-p">+91 88705 22547</p></div></a>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script src="./main.js"></script>
 </html>
+
+

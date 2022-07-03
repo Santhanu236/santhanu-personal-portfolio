@@ -1,43 +1,20 @@
-function hide_all() {
-    document.getElementById("hr1").style.display = "none";
-    document.getElementById("hr2").style.display = "none";
-    document.getElementById("hr3").style.display = "none";
-    document.getElementById("hr4").style.display = "none";
-    document.getElementById("hr5").style.display = "none";
-}
-function hl_home() {
-    hide_all();
-    document.getElementById("hr1").style.display = "block";
-    document.getElementById("hr2").style.display = "block";
-}
-function hl_about() {
-    hide_all();
-    document.getElementById("hr2").style.display = "block";
-    document.getElementById("hr3").style.display = "block";
-}
-function hl_works() {
-    hide_all();
-    document.getElementById("hr3").style.display = "block";
-    document.getElementById("hr4").style.display = "block";
-}
-function hl_contact() {
-    hide_all();
-    document.getElementById("hr4").style.display = "block";
-    document.getElementById("hr5").style.display = "block";
-}
 setTimeout(function(){greet()}, 10000);
 
 setTimeout(function(){thanks()}, 20000);
-
+let ddd = new Date();
+console.log(ddd.getDay());
 function find_day(day) {
     let today;
     switch (day) {
+        case 0:
+            today = "Sunday";
+            break;
         case 1:
             today = "Monday";
             break;
         case 2:
             today = "Tuesday";
-            break;
+        break;
         case 3:
             today = "Wednesday";
         break;
@@ -50,9 +27,6 @@ function find_day(day) {
         case 6:
             today = "Saturday";
         break;
-        case 7:
-            today = "Sunday";
-        break;
         default:
             break;
     }
@@ -63,7 +37,7 @@ function greet() {
     const hours = date.getHours();
     const day = date.getDay();
     let greetTime;
-    if (hours >= 5 && hours < 12) {
+    if (hours >= 5 && hours <= 12) {
         greetTime = "Morning";
     } else if (hours >= 12 && hours < 17) {
         greetTime = "Afternoon";
@@ -86,4 +60,9 @@ function thanks() {
 function close_greet() {
     console.log("closing");
     document.getElementById("greet-div").style.display = "none";
+}
+function copy_phno() {
+
+    navigator.clipboard.writeText(`+`+918870522547);
+    alert("phone number copied!")
 }
