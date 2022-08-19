@@ -58,7 +58,6 @@ function thanks() {
 
 }
 function close_greet() {
-    console.log("closing");
     document.getElementById("greet-div").style.display = "none";
 }
 function copy_phno() {
